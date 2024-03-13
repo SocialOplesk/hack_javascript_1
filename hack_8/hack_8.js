@@ -8,9 +8,10 @@
  * 
  * output => ["b@r","b@z","QUX"]   
  */
-let arr = ["foo","bar","baz","qux","echo"];
-let result = [];
 
+let arr = ["foo","bar","baz","qux","echo"];
+let result = arr.filter(item => item !== "foo" && item !== "echo")
+                 .map(item => item === "bar" || item === "baz" ? item.replace("a", "@") : (item === "qux" ? item.toUpperCase() : item));
 
 //export result
 module.exports = result;

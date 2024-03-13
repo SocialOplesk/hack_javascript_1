@@ -9,6 +9,11 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+for (let i = 0; i < arr.length; i++) {
+    let letra = arr[i];
+    let mayúscula = letra.charAt(0).toUpperCase() + letra.slice(1);
+    result.push(mayúscula);
+  }
 
 //export result
 module.exports = result;
