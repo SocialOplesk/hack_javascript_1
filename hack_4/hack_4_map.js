@@ -7,6 +7,10 @@
  */
 let result = [];
 
+let arrInit = [1,3,5,7]
+let res = 0;
+arrInit.map(num => result.push(num))
+
 
 //export result
 module.exports = result;

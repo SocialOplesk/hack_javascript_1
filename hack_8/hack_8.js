@@ -11,6 +11,7 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+result = arr.slice(1,4).map(item=>  item==='qux' ? 'QUX': item.replace('a', '@') ); 
 
 //export result
 module.exports = result;

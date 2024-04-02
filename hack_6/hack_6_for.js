@@ -7,7 +7,14 @@
  * output => ["f","o","o","z","i","m","a,"n"]
  */
 let str = "fooziman";
+
 let result = [];
+
+let i = 0;
+
+for(; i<str.length; i++){
+    result.push(str[i]);
+};
 
 
 //export result
